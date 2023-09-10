@@ -1,5 +1,5 @@
 class Controls{
-    construstor(){
+    constructor(){
         this.forward = false;
         this.left = false;
         this.right = false;
@@ -28,13 +28,15 @@ class Controls{
                     this.reverse = true;
                     break;
             }
+
+          //  console.table(this);
         }
 
-        document.onkeyUp= (e) => {
+        document.onkeyup= (e) => {
 
             switch(e.key){
                 case "ArrowLeft" :
-                    this.left = true;
+                    this.left = false;
                     break;
 
                 case "ArrowRight" :
@@ -49,6 +51,7 @@ class Controls{
                     this.reverse = false;
                     break;
             }
+           // console.table(this);
         }
     }
 }
